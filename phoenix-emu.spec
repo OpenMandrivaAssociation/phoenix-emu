@@ -1,14 +1,16 @@
 %define _enable_debug_packages %{nil}
 %define debug_package %{nil}
 
+%define sver %(echo %{version} | sed s,'\\.',,g)
+
 Summary:	3DO emulator
 Name:		phoenix-emu
-Version:	2.1
+Version:	2.2
 Release:	1
 License:	Freeware
 Group:		Emulators
 Url:		http://www.arts-union.ru/node/23
-Source0:	http://www.arts-union.ru/sites/default/files/ph21-linux-x86.zip
+Source0:	http://www.arts-union.ru/sites/default/files/ph%{sver}-linux-x86.zip
 BuildRequires:	imagemagick
 ExclusiveArch:	%{ix86}
 
