@@ -5,14 +5,15 @@
 
 Summary:	3DO emulator
 Name:		phoenix-emu
-Version:	2.2
+Version:	2.3.1
 Release:	1
 License:	Freeware
 Group:		Emulators
 Url:		http://www.arts-union.ru/node/23
 Source0:	http://www.arts-union.ru/sites/default/files/ph%{sver}-linux-x86.zip
+Source1:	http://www.arts-union.ru/sites/default/files/ph%{sver}-linux-x64.zip
 BuildRequires:	imagemagick
-ExclusiveArch:	%{ix86}
+ExclusiveArch:	%{ix86} x86_64
 
 %description
 3DO emulator. Requires a BIOS image.
@@ -27,7 +28,12 @@ ExclusiveArch:	%{ix86}
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qc
+%setup -qcT
+%ifarch %{ix86}
+unzip %{SOURCE0}
+%else
+unzip %{SOURCE1}
+%endif
 
 %build
 
