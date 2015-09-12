@@ -6,7 +6,7 @@
 Summary:	3DO emulator
 Name:		phoenix-emu
 Version:	2.3.1
-Release:	1
+Release:	2
 License:	Freeware
 Group:		Emulators
 Url:		http://www.arts-union.ru/node/23
