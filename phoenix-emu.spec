@@ -9,7 +9,7 @@ Version:	2.3.1
 Release:	2
 License:	Freeware
 Group:		Emulators
-Url:		http://www.arts-union.ru/node/23
+Url:		https://www.arts-union.ru/node/23
 Source0:	http://www.arts-union.ru/sites/default/files/ph%{sver}-linux-x86.zip
 Source1:	http://www.arts-union.ru/sites/default/files/ph%{sver}-linux-x64.zip
 BuildRequires:	imagemagick
